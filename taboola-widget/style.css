@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+.taboola-widget {
+  font-family: Roboto, assistant, Arial, sans-serif;
+}
+
+.taboola-widget-header {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.taboola-header-title {
+  font-weight: 700;
+}
+
+.taboola-header-sponsor {
+  font-size: 9px;
+}
+
+.taboola-card-container {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.taboola-card {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 235px;
+  flex-direction: column;
+  width: 33%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+@supports (display: flex) {
+  .taboola-card {
+    flex-basis: 33%;
+    width: 100%;
+  }
+}
+
+.taboola-card-image {
+  max-width: 100%;
+  height: 150px;
+  margin-bottom: 5px;
+  object-fit: cover;
+}
+
+.taboola-card-title {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  display: block;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.taboola-card-footer {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: #999999;
+}
+
+.taboola-card-category {
+  margin: 0px;
+
+  text-transform: capitalize;
+}
+
+.taboola-card-branding {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .taboola-card-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .taboola-card-image {
+    height: 200px;
+  }
+}

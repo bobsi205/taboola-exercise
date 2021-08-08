@@ -1,0 +1,14 @@
+/* site css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container {
+  width: 40%;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
